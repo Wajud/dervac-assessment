@@ -1,5 +1,5 @@
-const email = document.getElementById("emailInput");
-const emailEntry = document.querySelector("p > span#emailEntry");
+const emailAddress = localStorage.getItem("emailSubmitted");
 
-// emailEntry.innerHTML = email.value;
-console.log(email.value);
+const emailEntry = document.getElementById("email-entry");
+
+emailEntry.innerHTML = emailAddress;

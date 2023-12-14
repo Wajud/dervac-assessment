@@ -9,10 +9,12 @@ submitBtn.addEventListener("click", () => {
 
   if (regEx.test(emailAddress)) {
     errorMessage.classList.add("hidden");
+    email.classList.add("text-red-500");
     localStorage.setItem("emailSubmitted", email.value);
     window.location.href = "success.html";
   } else {
     errorMessage.classList.remove("hidden");
+
     setTimeout(() => {
       errorMessage.classList.add("hidden");
     }, 3000);

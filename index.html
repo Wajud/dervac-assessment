@@ -42,24 +42,25 @@
          <div class="flex gap-8 justify-between mt-8 mb-4">
 
             <p class="font-semibold">Email address</p>
-            <p class="font-semibold text-[hsl(4,100%,67%)]">Valid email required</p>
+            <p class="font-semibold text-[hsl(4,100%,67%)] hidden" id="errorMessage">Valid email required</p>
 
          </div>
-         <form class="flex flex-col gap-4">
+         <div class="flex flex-col gap-4">
 
-            <input type="text" placeholder="email@company.com"
+            <input type="text" placeholder="email@company.com" id="emailInput"
                class="pl-4 py-2 block w-full border border-gray-200 rounded-md">
-            <button
+            <button id="submitEmail"
                class="block w-full rounded-md text-white bg-[hsl(235,18%,26%)] px-4 py-2 mb-10 text-center font-semibold">Subscribe
                to
                monthly
                newsletter</button>
-         </form>
+         </div>
       </div>
    </div>
 
-   <script src="main.js"></script>
 
+   <script src="main.js"></script>
+   <script src="success.js"></script>
 </body>
 
 </html>

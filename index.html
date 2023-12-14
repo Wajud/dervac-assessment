@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dervac Assessment</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+      body {
+         font-family: 'Roboto', sans-serif;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="md:w-[90%] md:mx-auto md:flex h-screen items-center gap-8 pb-12 md:pb-4">
+      <div class="md:order-2 md:self-center">
+
+         <img src="assets/images/illustration-sign-up-mobile.svg" alt="" class="w-full object-fit block md:hidden">
+         <img src="assets/images/illustration-sign-up-desktop.svg" alt="" class="w-full object-fit hidden md:block">
+      </div>
+      <div class="my-8 pl-6 w-[90%] md:w-[50%]">
+
+         <h1 class="font-bold text-4xl text-[hsl(234,29%,20%)]">Stay updated!</h1>
+         <p class="my-4">Join 60,000+ product managers receiving monthly updates on:</p>
+
+         <div class="flex gap-4 my-4">
+            <img src="assets/images/icon-list.svg" alt="mark">
+            <p class="font-semibold">Product discovery and building what matters</p>
+         </div>
+         <div class="flex gap-4 my-4">
+            <img src="assets/images/icon-list.svg" alt="mark">
+            <p class="font-semibold">Measuring to ensure updates are a success</p>
+         </div>
+         <div class="flex gap-4 my-4">
+            <img src="assets/images/icon-list.svg" alt="mark">
+            <p class="font-semibold">And much more!</p>
+         </div>
+         <div class="flex gap-8 justify-between mt-8 mb-4">
+
+            <p class="font-semibold">Email address</p>
+            <p class="font-semibold text-[hsl(4,100%,67%)]">Valid email required</p>
+
+         </div>
+         <form class="flex flex-col gap-4">
+
+            <input type="text" placeholder="email@company.com"
+               class="pl-4 py-2 block w-full border border-gray-200 rounded-md">
+            <button
+               class="block w-full rounded-md text-white bg-[hsl(235,18%,26%)] px-4 py-2 mb-10 text-center font-semibold">Subscribe
+               to
+               monthly
+               newsletter</button>
+         </form>
+      </div>
+   </div>
+
+</body>
+
+</html>
